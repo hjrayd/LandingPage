@@ -4,6 +4,12 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="index.css">
   <title>Page d'accueil</title>
 
@@ -12,9 +18,11 @@
 <body>
     <div id="wrapper">
         <header>
+            <section>
         <nav class="navbar">
-            <h2>Kucra</h2>
 
+            <h2>Kucra</h2>
+            <!--Navigation bar-->
             <ul>
             <li> <a href="">Home</a> </li>
             <li> <a href="">Features</a> </li>
@@ -26,26 +34,105 @@
             <li> <a href="">Contact</a> </li>
             </ul>
 
-        <!--mettre les icones ici-->
-            </nav>
+
+            <div class="logo">
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+
+            <div class="logo">
+             <i class="fa-brands fa-twitter"></i>
+            </div>
+
+            <div class="logo">
+             <i class="fa-brands fa-instagram"></i>
+            </div>
+
+
+        </nav>
+
         <h1>We are StartUp Creative Kucra Agency</h1>
 
         <p>
             Carefully crafted after analysing the needs of different industries and the design achieves a great balance between purpose & presentation
         </p>
-        
-        <!--Entrer la barre newsletter ici-->
-        
+
+            <!--Barre subscribe-->
+
+            <div class="newsletter">
+                <input type="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </div>
+            
+            <img src="illustration.svg" alt="Logo Kucra Agency">
+
+            </section>
         </header>
+
+        <main>
+            <section>
+            <!--product feature avec flexcards-->
+             <h2>Products Features</h2>
+             <p>It is a long established fact that a reader will be of a page when established fact looking at its layout</p>
+
+             <div class="card">
+                <i class="fa-solid fa-globe"></i>
+
+                <h1>Digital Design</h1>
+
+                <p> Some quick example text to build on the card title and make up the bulk of the card the platform. </p>
+             </div>
+
+             <div class="card">
+                <i class="fa-solid fa-brush"></i>
+
+                <h1>Unlimited Colors</h1>
+
+                <p>Credibly brand stanaads compliant user exteible services College Anibh ocean euismad tincidunt laoreet </p>
+             </div>
+
+             <div class="card">
+                <i class="fa-solid fa-chess"></i>
+
+                <h1>Strategy Solutions</h1>
+
+                <p>Seperated they live in Bookmarks grove right at the coast of the Semantics, a large ocean regelialia. </p>
+             </div>
+
+            </section>
+
+            <section>
+                <!--Présentation membres de l'équipe-->
+
+                <h2>We're dynamic team of talented people of innovative & marketing expert</h2>
+                    <p>To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages of the resulting language</p>
+
+                    <div class="equipe">
+                        <div class="membres">
+                            <img src="">
+                        </div>
+                    </div>
+            </section>
+
+            <section>
+            <!--Section avec effet parallax-->
+            </section>
+
+            <section>
+            <!--Section blog-->
+            </section>
+
+            <section>
+            <!--Section pricing-->
+            </section>
+
+        </main>
+    
+        <footer>
+            <!--logos+ bouton haut de page -->
+            
+        </footer>
+
     </div>
-
 </body>
-    <main>
-
-    </main>
-
-    <footer>
-
-        
-    </footer>
+    
 </html>
