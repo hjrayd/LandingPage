@@ -6,9 +6,16 @@
     font-family: "Poppins";
 }
 
+/* 
+=================================================================
+========================= HEADER ================================
+=================================================================
+ */
+
 #home {
     background-image: radial-gradient(white, #89cff0);
     height: 100%;
+    padding: 0 10%;
 }
 
 header h2 {
@@ -18,20 +25,34 @@ header h2 {
 }
 
 header ul {
-    padding: 0;
-    margin: 0;
     display: flex;
+    justify-content: space-evenly;
     flex-direction: row;
-    justify-content:space-evenly;
     list-style-type: none;
 
 }
 
 
 header li {
-
+    display: flex;
 
 }
+
+.logos-header {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: space-between;
+    
+
+}
+
+
+header img {
+    height: 50px;
+    justify-content: center;
+
+} 
 
 
 a {
@@ -40,8 +61,3 @@ a {
 
 }
 
-header img {
-    height: 50px;
-    justify-content: center;
-
-} 
