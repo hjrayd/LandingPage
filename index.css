@@ -12,52 +12,178 @@
 =================================================================
  */
 
-#home {
+
+header {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    margin-bottom: 40px;
     background-image: radial-gradient(white, #89cff0);
-    height: 100%;
+}
+
+.navbar {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+}
+
+.navbar .titre {
+    padding-top: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.navbar a {
+    
+    color: white;
+    text-decoration: none;
+    flex-wrap: nowrap;
+}
+
+.navbar .logos-header {
+    display: flex;
+    float: right;
+   
+}
+
+#home {  
+
     padding: 0 10%;
 }
 
-header h2 {
-    color: white;
-    display: flex;
-    text-align: left;
-}
 
 header ul {
-    display: flex;
-    justify-content: space-evenly;
+    display: inline-flex;
     flex-direction: row;
     list-style-type: none;
+    padding-left: 20%;
+    font-size: 17px;
 
 }
 
 
 header li {
     display: flex;
-
+    padding-right: 20px;
+    text-align: center;
+    
 }
 
 .logos-header {
-    display: flex;
+
+     display:inline-block;
     flex-direction: row;
     color: white;
-    justify-content: space-between;
-    
+    width: 20%;
+    justify-content: space-evenly;
 
 }
 
 
-header img {
-    height: 50px;
-    justify-content: center;
+header img{
+   display: block;
+    width: 50%;
+    padding: 20px;
+    justify-content: right;
+    align-items: center;
 
+    
 } 
 
+#home h1 {
 
-a {
-    text-decoration: none;
-    color: white;
+    margin-top: 15%;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: justify;
 
+   
 }
 
+#home p {
+    margin-top: 30px;
+    text-wrap: wrap;
+    text-align: justify;
+    padding-bottom: 30px;
+
+
+}
+/* 
+=================================================================
+========================= NEWSLETTER ================================
+=================================================================
+ */
+
+
+.newsletter {
+
+    
+}
+
+
+.newsletter input {
+    padding-left: 50px;
+    border-radius: 30px;
+    border: none;
+    padding: 15px;
+    width: 30%;
+ 
+}
+
+ .newsletter button {
+    position: absolute;
+    background-color: #54B0FF;
+    color: white;
+    border-radius: 30px;
+    margin-top: 3px;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 15px;
+    transform: translate(-105%,0%);
+    border: none;
+ }
+
+/* 
+=================================================================
+========================= FEATURES ================================
+=================================================================
+ */
+
+
+
+ /*=================================================================
+========================= MEMBERS ================================
+=================================================================
+ */
+
+  /*=================================================================
+========================= PARALLAX================================
+=================================================================
+ */
+
+
+  /*=================================================================
+========================= BLOG ================================
+=================================================================
+ */
+
+
+  /*=================================================================
+========================= PRICING================================
+=================================================================
+ */
+
+  /*=================================================================
+========================= TOP BUTTON ================================
+=================================================================
+ */
+
+  /*=================================================================
+========================= FOOTER ================================
+=================================================================
+ */
