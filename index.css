@@ -292,6 +292,12 @@ header img{
 
 }
 
+
+.cards-2 {
+    overflow: hidden;
+}
+
+
 .cards-2 strong {
     font-size: 20px;
     opacity: 1;
@@ -336,23 +342,38 @@ header img{
 .cards-2-logos {
     display: flex;
     justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 50px;
+    align-items: center;
+    padding-bottom: 20px;
+    flex-direction: column;
+    width: 50px;
     height: 50px;
     position: absolute;
-    top: 50px;
-    left: 50px;
-    bottom: 50px;
     transition: 0.5s;
-
-    
+   
 }
 
 
-.cards-2:hover .cards-2-logos {
-  left: 0;
+.cards-2-header i {
+    display: flex;
+    height: 30px;
+    width: 30px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding-bottom: 20px;
+    border-radius: 50%;
+    top: 100px;
+    left: -50px;
+}
 
+
+.cards-2-header a {
+    text-decoration: none;
+    color: black;
+}
+
+.cards-2:hover .cards-2-logos {
+    top: 0;
 }
 
   /*=================================================================
@@ -361,10 +382,149 @@ header img{
  */
 
 
+
+
+#parallax {
+    min-height: 50vh;
+    background-image: url(parallax.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+ #parallax .parallax-text {
+    height: 100%;
+    width: 100%;
+   padding-top: 150px;
+   padding-bottom: 150px;
+    color: white;
+    justify-content: space-evenly;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6)
+}
+
+
+
+#parallax .parallax-text h2 {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+
+
+.parallax-text p {
+    margin-bottom: 50px;
+}
+
+
+.parallax-text a {
+    display: flex;
+    height: 50px;
+    width: 150px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border: white 2px solid;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+
+.parallax-text a:hover {
+    transform: translateY(-5px);
+    background-color: white;
+    color: black;
+}
+
   /*=================================================================
 ========================= BLOG ================================
 =================================================================
  */
+#blog {
+    min-height: 100vh;
+    display: flex;
+}
+
+
+.cards-3 {
+    
+    background: #fff;
+    width: 400px;
+    overflow: hidden;
+    justify-content: space-evenly;
+}
+
+.cards-3-header {
+    position: relative;
+    height: 300px;
+   overflow:hidden
+}
+
+.cards-3-header img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+   
+}
+
+.cards-3 p {
+ margin-top: 10px;
+ opacity: 0.7;
+}
+
+.cards-3-text h3 {
+    text-align: justify;
+    font-weight: 600;
+    margin-top: 10px;
+
+}
+
+.cards-3-text a {
+    margin-top: 10px;
+    text-decoration: none;
+    color: #126180;
+    font-weight: 500;
+}
+
+#blog {
+  display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+
+.cards-3 img:hover {
+    filter: brightness(70%);
+
+}
+
+.survol {
+    display: flex;
+justify-content: center;
+align-items: center;
+width: 50px;
+height: 50px;
+color: #fff;
+font-size: 15px;
+position: absolute;
+top: 0;
+left: -60px;
+transition: 0.5s;
+}
+
+
+.card-3:hover .survol {
+    left: 0;
+} 
 
 
   /*=================================================================
