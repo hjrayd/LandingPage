@@ -42,6 +42,7 @@ header {
     color: white;
     text-decoration: none;
     flex-wrap: nowrap;
+    transition: 0.5s;
 }
 
 .navbar .logos-header {
@@ -113,6 +114,11 @@ header img{
 
 
 }
+
+
+.navbar a:hover {
+    opacity: 0.7;
+}
 /* 
 =================================================================
 ========================= NEWSLETTER ================================
@@ -140,6 +146,12 @@ header img{
     font-size: 15px;
     transform: translate(-105%,0%);
     border: none;
+    transition: 0.5s;
+ }
+
+
+ .newsletter button:hover {
+    opacity: 0.8;
  }
 
 /* 
@@ -155,26 +167,37 @@ header img{
 
 #features h2 {
     display: flex;
+    padding-bottom: 10px;
       justify-content: center;
       text-align: justify;
 }
 
 .titre {
-    display: flex;
+   
     justify-content: center;
     text-align: center;
     color: grey;
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
 #container {
+    min-height: 50vh;
     display: flex;
-    min-height: 100vh;
     justify-content: center;
     align-items: center;
     gap: 30px;
-    padding-top: 0;
+    padding-top: 100px;
+    padding-bottom: 150px;
 }
+
+
+.cards-1:hover {
+    transform: translateY(-20px);
+
+
+}
+
+
 
 .cards-1 {
     display: flex;
@@ -183,48 +206,154 @@ header img{
     flex-wrap: wrap;
     overflow: hidden;
     gap: 20px;
-    background-image: radial-gradient(white, #2596be 90%);
-    width: 500px;
-    height: 400px;
+    background-image: radial-gradient(#2596be, #126180 90%);
+    width: 400px;
+    height: 350px;
     border-radius: 10px;
     padding: 40px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    transition: 0.5s;
   
 }
 
 .cards-1 i {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-top: 50px;
     height: 100px;
     color: white;
-    font-size: 30px;
-    
+    font-size: 40px;
 }
 
 .cards-1 h3 {
+    
+   padding-bottom: 10px;
     font-size: 25px;
-    margin-bottom: 10px;
     font-weight: 500;
     color: white;
+    
 }
 
 .cards-1 p {
+
     font-size: 14px;
     color: white;
     font-weight: 300;
-    text-align: center;
-    justify-content: center;
-    
 
 }
 
+.cards-1-text {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 100px;
+}
 
 
  /*=================================================================
 ========================= MEMBERS ================================
 =================================================================
  */
+
+
+ #team {
+    min-height: 80vh;
+ }
+
+ #team h2 {
+    
+    text-align: center;
+    justify-content: justify;
+    padding-bottom: 15px;
+    padding-bottom: 20px;
+
+ }
+
+ .titre-team {
+   
+    justify-content: center;
+    text-align: center;
+    color: grey;
+    opacity: 0.7;
+    padding-bottom: 50px;
+ }
+
+.equipe {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    text-align: center;
+   
+}
+
+.cards-2 p {
+    padding-bottom: 30px;
+    opacity: 0.7;
+
+
+}
+
+.cards-2 strong {
+    font-size: 20px;
+    opacity: 1;
+}
+
+.cards-2 h3 {
+    font-size: 17px;
+    font-weight: 500;
+   
+}
+
+.cards-2-header{
+    position: relative;
+    width: 200px;
+    height: 250px;
+   
+ 
+}
+
+.cards-2-header img {
+     transition: 0.5s;
+     width: 100%;
+     height: 100%;
+     border-radius: 100%;
+    filter: grayscale(1);
+    padding-bottom: 20px;
+    padding-top: 15px;
+
+}
+
+.cards-2:hover .cards-2-header img {
+    transform: scale(1.1);
+  
+
+}
+
+.cards-2-header img:hover {
+    filter: grayscale(0);
+}
+
+
+.cards-2-logos {
+    display: flex;
+    justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    bottom: 50px;
+    transition: 0.5s;
+
+    
+}
+
+
+.cards-2:hover .cards-2-logos {
+  left: 0;
+
+}
 
   /*=================================================================
 ========================= PARALLAX================================
