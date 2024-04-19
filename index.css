@@ -280,20 +280,14 @@ header img{
     display: flex;
     justify-content: space-evenly;
     padding-top: 20px;
-    text-align: center;
+    text-align: center; 
    
 }
 
 .cards-2 p {
     padding-bottom: 30px;
     opacity: 0.7;
-
-
-}
-
-
-.cards-2 {
-    overflow: hidden;
+  
 }
 
 
@@ -312,8 +306,8 @@ header img{
     position: relative;
     width: 200px;
     height: 250px;
+    overflow: hidden;
    
- 
 }
 
 .cards-2-header img {
@@ -323,15 +317,13 @@ header img{
      border-radius: 100%;
     filter: grayscale(1);
     padding-bottom: 20px;
-    padding-top: 15px;
-  
+    padding-top: 15px;   
 
+ 
 }
 
 .cards-2:hover .cards-2-header img {
     transform: scale(1.1);
-  
-
 }
 
 .cards-2-header img:hover {
@@ -349,7 +341,7 @@ header img{
     height: 50px;
     position: absolute;
     transition: 0.5s;
-   
+    bottom: -100px;
 }
 
 
@@ -357,14 +349,12 @@ header img{
     display: flex;
     height: 30px;
     width: 30px;
-    justify-content: space-between;
     align-items: center;
+    margin: 5px;
+    padding: 15px 25px 10px 10px;
     background-color: white;
     padding-bottom: 20px;
-    border-radius: 50%;
-    top: 100px;
-    left:-50px;
-   
+   border-radius: 50%;
 }
 
 
@@ -375,7 +365,7 @@ header img{
 
 .cards-2:hover .cards-2-logos {
     top: 80px;
-
+    transform: translate(10px, 10px);
 
 }
 
@@ -461,12 +451,14 @@ header img{
     background: #fff;
     width: 400px;
     justify-content: space-evenly;
+  
 }
 
 .cards-3-header {
     position: relative;
     height: 300px;
-   
+    overflow: hidden;
+  
 }
 
 .cards-3-header img {
@@ -474,8 +466,7 @@ header img{
     width: 100%;
     object-fit: cover;
     transition: 0.5s;
-   
- 
+
 }
 
 .cards-3 p {
@@ -511,22 +502,21 @@ header img{
 
 }
 
-.survol {
-display: flex;
-flex-wrap: wrap;
-color: #fff;
-align-items: end;
-height: 50px;
-top: 0;
-left: -50px;
-font-size: 15px;
-position: absolute;
-transition: 0.5s;
+.cards-3:hover .survol {
+    display: flex;
+    align-items: flex-end;
+    color: #fff;
+    height: 50px;
+    top: 0;
+    font-size: 15px;
+    position: absolute;
+    padding-left: 20px;
+  
 }
 
-
-.card-3-:hover .survol  {
-    left: 0;
+.cards-3:hover .survol i {
+    padding-right: 5px;
+    font-size: 20px;
 }
 
 
@@ -675,12 +665,30 @@ transition: 0.5s;
 =================================================================
  */
 
+ .gotopbtn {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: grey;
+    padding: 10px;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 100%;
+    color: white;
+    font-size: 22px;
+    
+ }
+
   /*=================================================================
 ========================= FOOTER ================================
 =================================================================
  */
 
 footer {
+    position: relative;
     min-height: 20;
     background-color: rgba(0, 0, 0, 0.8)
 }
@@ -691,9 +699,32 @@ footer {
     color: grey;
     font-size: 20px;
     height: 50px;
+    width: 45px;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    border: 2px grey solid;
+    border: 1px grey solid;
     border-radius: 100%;
+}
+
+
+#contacts li{
+ color: grey;
+ display: flex;
+ padding-right: 20px;
+}
+
+#contacts ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+
+#contacts small {
+    color: grey;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
 }
