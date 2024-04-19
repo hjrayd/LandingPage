@@ -263,7 +263,6 @@ header img{
     
     text-align: center;
     justify-content: justify;
-    padding-bottom: 15px;
     padding-bottom: 20px;
 
  }
@@ -325,6 +324,7 @@ header img{
     filter: grayscale(1);
     padding-bottom: 20px;
     padding-top: 15px;
+  
 
 }
 
@@ -363,7 +363,8 @@ header img{
     padding-bottom: 20px;
     border-radius: 50%;
     top: 100px;
-    left: -50px;
+    left:-50px;
+   
 }
 
 
@@ -373,7 +374,9 @@ header img{
 }
 
 .cards-2:hover .cards-2-logos {
-    top: 0;
+    top: 80px;
+
+
 }
 
   /*=================================================================
@@ -449,21 +452,21 @@ header img{
 #blog {
     min-height: 100vh;
     display: flex;
-}
+    justify-content: center;
+    align-items: center;
+    gap: 20px;}
 
 
 .cards-3 {
-    
     background: #fff;
     width: 400px;
-    overflow: hidden;
     justify-content: space-evenly;
 }
 
 .cards-3-header {
     position: relative;
     height: 300px;
-   overflow:hidden
+   
 }
 
 .cards-3-header img {
@@ -472,6 +475,7 @@ header img{
     object-fit: cover;
     transition: 0.5s;
    
+ 
 }
 
 .cards-3 p {
@@ -508,23 +512,22 @@ header img{
 }
 
 .survol {
-    display: flex;
-justify-content: center;
-align-items: center;
-width: 50px;
-height: 50px;
+display: flex;
+flex-wrap: wrap;
 color: #fff;
+align-items: end;
+height: 50px;
+top: 0;
+left: -50px;
 font-size: 15px;
 position: absolute;
-top: 0;
-left: -60px;
 transition: 0.5s;
 }
 
 
-.card-3:hover .survol {
+.card-3-:hover .survol  {
     left: 0;
-} 
+}
 
 
   /*=================================================================
@@ -532,6 +535,141 @@ transition: 0.5s;
 =================================================================
  */
 
+#pricing {
+    padding-left: 50px;
+    padding-right: 50px;
+    min-height: 80vh;
+    position: relative;
+}
+
+#pricing h2 {
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+
+.pricing-text {
+    justify-content: justify;
+    text-align:  start;
+    margin-left: 300px;
+}
+
+
+.pricing-text p {
+    opacity: 0.8;
+    justify-content: justify;
+    margin-bottom: 20px;
+}
+
+.pricing-text strong {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+#pricing img {
+    display: flex;
+    position: absolute;
+    margin-right: 300px;
+    right: 0;
+    width: 30%;
+    top: 0;
+}
+
+.pricing-text a {
+    color: white;
+    background-color: #2596be;
+    text-decoration: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 5px;
+}
+
+ .cards-pricing {
+    margin-top: 200px;
+    background-color: rgba(0, 0, 0, 0.05)
+}
+
+
+.cards-pricing h2 {
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+ .pricing-line {
+    text-align: center;
+    justify-content: justify;
+    opacity: 0.4;
+}
+
+.cards-4 {
+    border-radius: 10px;
+    background: #fff;
+    width: 350px;
+    padding: 30px;
+}
+
+.card-4-header {
+    height: 500px; 
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+   
+}
+
+.card-4-text {
+    padding: 30px;
+}
+
+.card-4-text h3 {
+    font-size: 10px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.cards-4 strong {
+    color: #2596be;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.cards-4 li {
+
+    list-style-type: none;
+    margin: 10px;
+
+}
+
+
+.cards-4 ul {
+  
+
+}
+
+.cards-4-all{
+    display: flex;
+    min-height: 80vh;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.cards-4 a {
+    color: white;
+    background-color: #2596be;
+    align-items: center;
+    text-decoration: none; 
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 105px;
+    padding-right: 105px;
+    border-radius: 5px;
+}
   /*=================================================================
 ========================= TOP BUTTON ================================
 =================================================================
@@ -541,3 +679,21 @@ transition: 0.5s;
 ========================= FOOTER ================================
 =================================================================
  */
+
+footer {
+    min-height: 20;
+    background-color: rgba(0, 0, 0, 0.8)
+}
+
+
+.logos-footer {
+    display: flex;
+    color: grey;
+    font-size: 20px;
+    height: 50px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px grey solid;
+    border-radius: 100%;
+}
