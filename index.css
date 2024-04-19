@@ -4,6 +4,7 @@
     box-sizing: border-box;
     vertical-align: top;
     font-family: "Poppins";
+    scroll-behavior: smooth;
 }
 
 /* 
@@ -48,11 +49,9 @@ header {
 .navbar .logos-header {
     display: flex;
     float: right;
-   
 }
 
 #home {  
-
     padding: 0 10%;
 }
 
@@ -63,7 +62,6 @@ header ul {
     list-style-type: none;
     padding-left: 20%;
     font-size: 17px;
-
 }
 
 
@@ -71,7 +69,6 @@ header li {
     display: flex;
     padding-right: 20px;
     text-align: center;
-    
 }
 
 .logos-header {
@@ -304,20 +301,20 @@ header img{
 
 .cards-2-header{
     position: relative;
-    width: 200px;
+    width: 250px;
     height: 250px;
     overflow: hidden;
+    border-radius: 50%;
    
 }
 
 .cards-2-header img {
+    /* display: block; */
      transition: 0.5s;
      width: 100%;
      height: 100%;
-     border-radius: 100%;
+     object-fit: cover;
     filter: grayscale(1);
-    padding-bottom: 20px;
-    padding-top: 15px;   
 
  
 }
@@ -543,6 +540,7 @@ header img{
     justify-content: justify;
     text-align:  start;
     margin-left: 300px;
+    position: relative;
 }
 
 
@@ -561,6 +559,7 @@ header img{
 #pricing img {
     display: flex;
     position: absolute;
+    float: right;
     margin-right: 300px;
     right: 0;
     width: 30%;
@@ -601,6 +600,7 @@ header img{
     background: #fff;
     width: 350px;
     padding: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;;
 }
 
 .card-4-header {
@@ -635,12 +635,6 @@ header img{
 
 }
 
-
-.cards-4 ul {
-  
-
-}
-
 .cards-4-all{
     display: flex;
     min-height: 80vh;
@@ -660,6 +654,9 @@ header img{
     padding-right: 105px;
     border-radius: 5px;
 }
+
+
+
   /*=================================================================
 ========================= TOP BUTTON ================================
 =================================================================
@@ -689,24 +686,30 @@ header img{
 
 footer {
     position: relative;
-    min-height: 20;
+    min-height: 20px;
     background-color: rgba(0, 0, 0, 0.8)
 }
 
+.logos {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
 
 .logos-footer {
     display: flex;
     color: grey;
     font-size: 20px;
     height: 50px;
-    width: 45px;
+    width: 50px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     border: 1px grey solid;
-    border-radius: 100%;
+    border-radius: 50%;
 }
-
 
 #contacts li{
  color: grey;
@@ -727,4 +730,16 @@ footer {
     display: flex;
     justify-content: center;
     padding-bottom: 30px;
+}
+
+.logos-footer a {
+    color: grey;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+}
+
+footer a {
+    color: grey;
+    text-decoration: none;
 }
