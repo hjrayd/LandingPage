@@ -450,6 +450,7 @@ header img{
 .cards-3-header {
     position: relative;
     height: 300px;
+    width: 400px;
     overflow: hidden;
   
 }
@@ -495,6 +496,23 @@ header img{
 
 }
 
+.auteur { display: flex;
+padding-right: 160px;
+font-size: 20px;
+font-weight: 500;}
+
+.date { display: flex;}
+
+.survol {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+
+.survol i {
+    padding-top: 10px;
+}
+
 .cards-3:hover .survol {
     display: flex;
     align-items: flex-end;
@@ -513,6 +531,7 @@ header img{
 }
 
 
+ 
   /*=================================================================
 ========================= PRICING================================
 =================================================================
@@ -624,13 +643,14 @@ header img{
 
 .cards-4-header-text {
     text-align: center;
+    padding-left: 35px;
 }
 
 .cards-4-header .solde {
     position: absolute;
     display: flex;
     top: -15px;
-    right: -25px;
+    right: -75px;
     align-items: center;
     text-align: center;
     background-color: #126180;
@@ -641,7 +661,9 @@ header img{
 }
 
 .cards-4-text {
-    padding: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .cards-4-text h3 {
@@ -663,7 +685,7 @@ header img{
 
 .cards-4 ul {
     float: left;
-
+    
 }
 
 .cards-4-translate {
@@ -688,10 +710,11 @@ transform: translateY(-20px);
     padding-bottom: 5px;
     padding-left: 70px;
     padding-right: 70px;
-    margin-left: 30px;
-    margin-top: 20px;
+    margin-left: 60px;
+    margin-top: 40px;
     border-radius: 5px;
 }
+
 
   /*=================================================================
 ========================= TOP BUTTON ================================
@@ -750,7 +773,7 @@ footer {
 #contacts li{
  color: grey;
  display: flex;
- padding-right: 20px;
+ padding-right: 5px;
 }
 
 #contacts ul {
