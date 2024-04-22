@@ -27,12 +27,10 @@ header {
     padding-top: 20px;
     padding-bottom: 20px;
     justify-content: space-between;
-    box-sizing: border-box;
 
 }
 
 .navbar .titre {
-    padding-top: 0;
     color: white;
     font-weight: bold;
     font-size: 30px;
@@ -58,7 +56,7 @@ header {
 
 header ul {
     display: inline-flex;
-    flex-direction: row;
+    
     list-style-type: none;
     padding-left: 20%;
     font-size: 17px;
@@ -649,7 +647,7 @@ font-weight: 500;}
 .cards-4-header .solde {
     position: absolute;
     display: flex;
-    top: -15px;
+    top: -35px;
     right: -75px;
     align-items: center;
     text-align: center;
