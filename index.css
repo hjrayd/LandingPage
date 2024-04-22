@@ -800,3 +800,74 @@ footer a {
     color: grey;
     text-decoration: none;
 }
+
+/*=================================================================
+========================= RESPONSIVE ================================
+=================================================================
+ */
+
+ @media screen and (max-width: 768px) {
+    
+    #wrapper {
+        padding: 0%;
+    }
+
+    .navbar {flex-wrap: wrap;}
+
+    #home ul {
+        padding-left: 0;
+    }
+
+    header img {
+     bottom: 150px;
+
+    }
+
+    .newsletter button {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .logos-header {
+        padding-top: 20px;
+    }
+    
+    .equipe {
+        flex-direction: column;
+    }
+
+    .cards-2-header {
+        margin-left: 200px;
+        margin-bottom: 20px;
+    }
+
+    .cards-3-all {
+        flex-direction: column;
+    }
+
+    .cards-3 {
+        padding-top: 10px;
+    }
+
+    #pricing {
+        padding-top: 150px;
+    }
+
+    .pricing-text {
+       margin: 0;
+    }
+
+    #pricing img {
+        margin: 0;
+        top: 200px;
+    }
+
+    .cards-4-all {
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    .cards-4-translate {
+        transform: none;
+    }
+ }
