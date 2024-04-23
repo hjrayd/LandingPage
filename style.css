@@ -824,20 +824,31 @@ footer a {
         padding: 0%;
     }
 
+    .logos-header i {
+        margin-left: 10px;
+    }
+    
+
+    header img {
+        display: none;
+        }
+
+    #home h1 {
+        text-align: center;
+    }
+
+    header ul {
+       flex-wrap: wrap;
+    }
+
     .newsletter input  {
         padding-left: 150px;
         padding-right: 150px;
         margin-bottom: 20px;
     }
 
-    header img {
-        bottom: 320px;
-        right: 0;
-        }
-
-
-    header ul {
-       flex-wrap: wrap;
+    #container {
+        flex-direction: column;
     }
 
     .equipe {
