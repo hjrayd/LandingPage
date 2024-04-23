@@ -816,6 +816,19 @@ footer a {
     text-decoration: none;
 }
 
+
+.burger-icon span {
+    display: none;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;    
+}
+
+
+.close {
+    display: none;
+}
 /*=================================================================
 ========================= RESPONSIVE ================================
 =================================================================
@@ -854,6 +867,7 @@ footer a {
         padding-left: 150px;
         padding-right: 150px;
         margin-top: 40px;
+        margin-left: 50px;
     }
 
     #container {
@@ -870,7 +884,7 @@ footer a {
     }
 
     .cards-2-header {
-        margin-left: 80px;
+        margin-left: 110px;
         margin-bottom: 10px;
     }
 
@@ -909,4 +923,58 @@ footer a {
     #pricing img {
         display: none;
     }
+
+
+    .sidenav {
+        width: 250px;
+        height: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: -250px;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding-top: 60px;
+        transition: 0.5s left ease;
+    }
+
+
+    .sidenav a {
+        padding: 8px 50px 8px 30px;
+        color: #2596be;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+        opacity: 0.6;
+    }
+
+    .sidenav ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    .sidenav.active {
+        left: 0;
+    }
+
+    .sidenav.close {
+        position: absolute;
+        top: 0;
+        right: 25px;
+    }
+
+    .burger-icon span {
+        display: block;
+        width: 35px;
+        height: 5px;
+        background-color: black;
+        margin: 6px 0;    
+    }
+
+    .close {
+        font-size: 30px;
+        margin-left: 180px;
+    }
+
  }
