@@ -600,9 +600,12 @@ font-weight: 500;}
     position: absolute;
     float: right;
     margin-right: 150px;
+    margin-left: 50px;
     right: 0;
-    width: 30%;
     top: 0;
+    width: 25%;
+    
+    
 }
 
 .pricing-text a {
@@ -834,32 +837,41 @@ footer a {
         }
 
     #home h1 {
+        font-size: 30px;
         text-align: center;
+        padding-bottom: 20px;
     }
 
     header ul {
        flex-wrap: wrap;
     }
+    
+    .newsletter button {
+        margin-top: 43px;
+    }
 
     .newsletter input  {
         padding-left: 150px;
         padding-right: 150px;
-        margin-bottom: 20px;
+        margin-top: 40px;
     }
 
     #container {
         flex-direction: column;
     }
 
+    .cards-1 {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
     .equipe {
         flex-direction: column;
     }
-    
 
     .cards-2-header {
         margin-left: 80px;
         margin-bottom: 10px;
-       
     }
 
     .cards-3-all {
@@ -867,12 +879,26 @@ footer a {
         margin-left: 10px;
     }
 
+    .cards-3 {
+        margin-left: 30px;
+        margin-right: 40px;
+    }
+
     .cards-4-all {
         flex-direction: column;
     }
 
+    .cards-4 {
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+
     .cards-4-translate {
         transform: none;
+    }
+
+    .cards-pricing {
+        margin-bottom: 20px;
     }
 
     .pricing-text {
