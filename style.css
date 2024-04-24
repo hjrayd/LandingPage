@@ -56,7 +56,6 @@ header {
 
 header ul {
     display: inline-flex;
-    
     list-style-type: none;
     padding-left: 20%;
     font-size: 17px;
@@ -120,6 +119,11 @@ header img{
 =================================================================
  */
 
+
+ .newsletter  {
+    display: flex
+ }
+
 .newsletter input {
     padding-left: 50px;
     border-radius: 30px;
@@ -130,8 +134,8 @@ header img{
 }
 
  .newsletter button {
-    position: absolute;
     background-color: #54B0FF;
+    display: block;
     color: white;
     border-radius: 30px;
     margin-top: 3px;
@@ -385,8 +389,8 @@ header img{
  #parallax .parallax-text {
     height: 100%;
     width: 100%;
-   padding-top: 150px;
-   padding-bottom: 150px;
+    padding-top: 10%;
+    padding-bottom: 10%;
     color: white;
     justify-content: space-evenly;
     text-align: center;
@@ -401,12 +405,9 @@ header img{
     margin-bottom: 20px;
 }
 
-
-
 .parallax-text p {
     margin-bottom: 50px;
 }
-
 
 .parallax-text a {
     display: flex;
@@ -428,6 +429,7 @@ header img{
     transform: translateY(-5px);
     background-color: white;
     color: black;
+  
 }
 
   /*=================================================================
@@ -452,6 +454,7 @@ header img{
     width: 400px;
     justify-content: space-evenly;
     margin-right: 20px;
+   
   
 }
 
@@ -740,7 +743,7 @@ transform: translateY(-20px);
     background: grey;
     padding: 10px;
     bottom: 40px;
-    right: 50px;
+    right: 100px;
     text-decoration: none;
     text-align: center;
     line-height: 50px;
@@ -833,99 +836,19 @@ footer a {
 ========================= RESPONSIVE ================================
 =================================================================
  */
-
- @media screen and (max-width: 768px) {
-    
-    #wrapper {
-        padding: 0%;
-    }
-
-    .logos-header i {
-        margin-left: 10px;
-    }
-    
-
-    header img {
-        display: none;
-        }
-
-    #home h1 {
-        font-size: 30px;
-        text-align: center;
-        padding-bottom: 20px;
-    }
-
-    header ul {
-       flex-wrap: wrap;
-    }
-    
-    .newsletter button {
-        margin-top: 43px;
-    }
-
-    .newsletter input  {
-        padding-left: 150px;
-        padding-right: 150px;
-        margin-top: 40px;
-        margin-left: 50px;
-    }
-
-    #container {
-        flex-direction: column;
-    }
-
-    .cards-1 {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    .equipe {
-        flex-direction: column;
-    }
-
-    .cards-2-header {
-        margin-left: 110px;
-        margin-bottom: 10px;
-    }
+ @media screen and (max-width: 1259px) {
 
     .cards-3-all {
-        flex-direction: column;
-        margin-left: 10px;
-    }
+    flex-direction: column;
+    margin-bottom: 20px;
+} 
 
-    .cards-3 {
-        margin-left: 30px;
-        margin-right: 40px;
-    }
-
-    .cards-4-all {
-        flex-direction: column;
-    }
-
-    .cards-4 {
-        margin-right: 30px;
-        margin-left: 30px;
-    }
-
-    .cards-4-translate {
-        transform: none;
-    }
-
-    .cards-pricing {
-        margin-bottom: 20px;
-    }
-
-    .pricing-text {
-        margin: 0;
-        padding-top: 20px;
-    }
-
-    #pricing img {
-        display: none;
-    }
+    header ul {
+        flex-wrap: wrap;
+     }
 
 
-    .sidenav {
+     .sidenav {
         width: 250px;
         height: 100%;
         position: fixed;
@@ -942,6 +865,7 @@ footer a {
         padding: 8px 50px 8px 30px;
         color: #2596be;
         display: block;
+    
         transition: 0.3s;
     }
 
@@ -976,5 +900,179 @@ footer a {
         font-size: 30px;
         margin-left: 180px;
     }
+
+ }
+
+
+ @media screen and (max-width: 1000px) {
+    .equipe {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .equipe h3 {
+        margin-top: 10px;
+    }
+
+    .cards-4-all {
+        flex-direction: column;
+    }
+
+    .cards-4-translate {
+        transform: none;
+    }
+
+
+    #pricing img {
+        display: none;
+    }
+        
+ }
+
+
+
+ @media screen and (max-width: 970px) {
+    header img {
+        display: none;
+    }
+
+    #home h1 {
+        text-align: center;
+    }
+
+    #home p {
+        text-align: center;
+    }
+
+    .newsletter {
+        align-items: center;
+        justify-content: center;
+    }
+ }
+
+ @media screen and (max-width: 914px) {
+    #container {
+        flex-direction: column;
+    }
+ }
+
+
+ @media screen and (max-width: 768px) {
+    
+    #wrapper {
+        padding: 0%;
+    }
+
+    .logos-header i {
+        margin-left: 10px;
+    }
+
+    #home h1 {
+        font-size: 30px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .newsletter button {
+        margin-top: 43px;
+    }
+
+    .newsletter input  {
+        padding-left: 150px;
+        padding-right: 150px;
+        margin-top: 40px;
+        margin-left: 50px;
+    }
+
+    #container {
+        flex-direction: column;
+    }
+
+    .cards-1 {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .cards-2 img {
+        margin-bottom: 20px;
+    }
+
+    .cards-3 {
+        margin-left: 30px;
+        margin-right: 40px;
+    }
+
+   
+    .cards-4 {
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+
+    
+    .cards-pricing {
+        margin-bottom: 20px;
+    }
+
+    .pricing-text {
+        margin: 0;
+        padding-top: 20px;
+    }
+
+    #pricing img {
+        display: none;
+    }
+
+    .logos{
+        flex-direction: column;
+        align-items: center;
+    }
+
+ }
+
+
+ @media screen and (max-width: 467px) {
+    .cards-1 {
+        margin: 0;
+        width: 100%;
+    }
+
+    .cards-4 {
+        margin: 0;
+        width: 100%;
+    }
+
+    .cards-4-translate {
+        width: 100%
+    }
+
+    .solde {
+        left: 280px;
+    }
+
+        #blog {
+            width: 100%;
+        }
+
+    .cards-4-header {
+        width: 100%;
+        }
+
+    .cards-4-header-text {
+        padding: 0;
+       
+    }
+
+    .cards-3 {
+        margin: 0;
+    }
+
+    .cards-3-text {
+        width: 100%;
+    }
+
+    .cards-4 a {
+        margin: 0;
+    }
+
 
  }
