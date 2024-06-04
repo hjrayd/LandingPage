@@ -8,4 +8,6 @@ It's the third CSS/HTML exercise that I did in my training. I had less difficult
 
 ![image](https://github.com/hjrayd/LandingPage/assets/164890959/5c858bab-176d-487e-8818-d0ee38aa5d60)
 
+![image](https://github.com/hjrayd/LandingPage/assets/164890959/60491026-f28b-44eb-a79b-081ca3e88807)
+
 
