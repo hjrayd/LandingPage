@@ -6,3 +6,6 @@ It's the third CSS/HTML exercise that I did in my training. I had less difficult
 
 ![image](https://github.com/hjrayd/LandingPage/assets/164890959/08ac8f99-ecd2-4c3d-a0e2-25dd8cfbc8ba)
 
+![image](https://github.com/hjrayd/LandingPage/assets/164890959/5c858bab-176d-487e-8818-d0ee38aa5d60)
+
+
